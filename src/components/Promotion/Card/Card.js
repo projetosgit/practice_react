@@ -5,7 +5,7 @@ const PromotionCard = ({ promotion }) => (
   <div className="promotion-card">
     <img
       src={promotion.imageUrl}
-      alt="img-promotion"
+      alt={promotion.title}
       className="promotion-card__image"
     />
 
@@ -27,6 +27,7 @@ const PromotionCard = ({ promotion }) => (
           href={promotion.url}
           target="_blank"
           className="promotion-card__link"
+          rel="noreferrer"
         >
           IR PARA O SITE
         </a>
